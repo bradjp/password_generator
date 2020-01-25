@@ -1,0 +1,13 @@
+Create a password generator.
+
+You should provide a length, and have a password returned.
+
+The password should consist of lower and upper case letters, numbers, and the symbols '%' and '$'.
+
+If no length is provided, return a password of 8 characters.
+
+Extras:
+
+Allow a password to receive only unique characters.
+
+Allow a password to exclude special characters.
