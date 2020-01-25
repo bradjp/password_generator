@@ -8,6 +8,7 @@ end
 def generate_password(length=8)
 
   return 'Insecure password length.' if length < 6
+  return 'Too many characters.' if length > 150
 
   password = []
   

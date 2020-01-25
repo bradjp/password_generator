@@ -19,4 +19,7 @@ describe '#generate_password' do
   it 'returns a message if password is below 6 characters' do
     expect(generate_password(5)).to eq('Insecure password length.')
   end
+  it 'returns a message if password is above 150 characters' do
+    expect(generate_password(151)).to eq('Too many characters.')
+  end
 end

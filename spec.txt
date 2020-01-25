@@ -8,15 +8,10 @@ If no length is provided, return a password of 8 characters. #
 
 If a length below 6 is specified, return 'Insecure password length.' #
 
+If a length above 150 is specified, return 'Too many characters.' #
+
 Extras:
 
 Allow a password to receive only unique characters.
 
 Allow a password to exclude special characters.
-
-Acceptance criteria
-
--------------------
-
-generate_password() => password with length 8
-generate_password(6) => password with length 6
