@@ -6,13 +6,34 @@ def character
 end
 
 def generate_password(length=8)
+  
+  check_length_conditions(length)
+ 
+  build_password(length)
 
-  return 'Insecure password length.' if length < 6
-  return 'Too many characters.' if length > 150
+end
 
+def password_creator
+
+  puts 'Please enter an integer: your generated password will be of this length.'
+
+  entry = gets.chomp.to_i
+
+  generate_password(entry)
+end
+
+private
+
+def build_password(length)
+  
   password = []
   
   length.times { password << character }
 
   password.join
+end
+
+def check_length_conditions(length)
+  raise ArgumentError, 'Insecure password length.' if length < 6
+  raise ArgumentError, 'Too many characters.' if length > 150
 end
