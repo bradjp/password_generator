@@ -1,12 +1,12 @@
 Create a password generator.
 
-You should provide a length, and have a password returned.
+You should provide a length, and have a password returned. #
 
-The password should consist of lower and upper case letters, numbers, and the symbols '%' and '$'.
+The password can consist of lower and upper case letters, numbers, and the symbols '%' and '$'. #
 
-If no length is provided, return a password of 8 characters.
+If no length is provided, return a password of 8 characters. #
 
-If a length below 6 is specified, return 'Insecure password length.'
+If a length below 6 is specified, return 'Insecure password length.' #
 
 Extras:
 
