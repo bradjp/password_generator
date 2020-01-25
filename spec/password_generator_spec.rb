@@ -17,6 +17,6 @@ describe '#generate_password' do
     expect(password).not_to eq(password_two)
   end
   it 'returns a message if password is below 6 characters' do
-    expect(password(5)).to eq('Insecure password length.')
+    expect(generate_password(5)).to eq('Insecure password length.')
   end
 end

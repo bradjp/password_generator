@@ -6,6 +6,9 @@ def character
 end
 
 def generate_password(length=8)
+
+  return 'Insecure password length.' if length < 6
+
   password = []
   
   length.times { password << character }
