@@ -12,6 +12,6 @@ If a length above 150 is specified, return 'Too many characters.' #
 
 Extras:
 
-Allow a password to receive only unique characters.
+Allow a password to receive only unique characters. #
 
 Allow a password to exclude special characters.
