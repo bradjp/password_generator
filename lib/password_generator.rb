@@ -1,4 +1,4 @@
-def big
+def password_generator
   def character
     ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U',
     'V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',
@@ -63,3 +63,4 @@ def big
   end
   password_creator()
 end
+password_generator()
