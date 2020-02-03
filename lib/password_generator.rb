@@ -1,4 +1,4 @@
-def password_generator
+
   def character
     ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U',
     'V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',
@@ -61,6 +61,3 @@ def password_generator
     raise ArgumentError, 'Insecure password length.' if length < 6
     raise ArgumentError, 'Too many characters.' if length > 150
   end
-  password_creator()
-end
-password_generator()
